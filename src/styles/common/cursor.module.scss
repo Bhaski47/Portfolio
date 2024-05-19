@@ -1,0 +1,11 @@
+@media screen and (width > 1024px ) {
+    .body{
+        width: 2.5vw;
+        height: 2.5vw;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 898;
+        box-shadow: 0 0 15px 15px #f23f91;
+        background: linear-gradient(177deg,rgba(253, 250, 146, 1) 0%,rgba(253, 196, 190, 1) 47%,rgba(250, 92, 202, 1) 100%);
+    }
+}

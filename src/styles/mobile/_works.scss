@@ -1,0 +1,292 @@
+@media screen and (max-width : 480px) {
+  @mixin buttonStyle {
+    .button {
+      cursor: pointer;
+      padding: 0.8em 1.8em;
+      border: 2px solid #d2328d;
+      position: relative;
+      overflow: hidden;
+      background-color: transparent;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 16px;
+      transition: 0.3s;
+      z-index: 1;
+      font-family: inherit;
+      color: white;
+    }
+
+    .button::before {
+      content: "";
+      width: 0;
+      height: 300%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      background: #d2328d;
+      transition: 0.5s ease;
+      display: block;
+      z-index: -1;
+    }
+
+    .button:hover::before {
+      width: 120%;
+    }
+
+    .button:hover {
+      color: white;
+    }
+  }
+
+  .body {
+    position: relative;
+    color: white;
+    background-image: url("../../assets/img/projects.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .progress {
+      backdrop-filter: blur(10px);
+      z-index: 910;
+      position: sticky;
+      font-family: Poppins;
+      top: 0;
+      left: 0;
+      text-align: center;
+      font-size: 24px;
+      color: white;
+      .progressBar {
+        border-radius: 10px;
+        height: 10px;
+        background-color: rgb(255, 190, 40);
+      }
+    }
+    .container {
+      padding-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      .wrapper {
+        flex-direction: column;
+        z-index: 900;
+        height: 100%;
+        width: 80%;
+        margin: auto;
+        gap: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .imgContainer {
+          width: 100%;
+          max-height: 300px;
+          img {
+            will-change: transform;
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+            object-fit: contain;
+          }
+        }
+        .textBox {
+          will-change: transform;
+          font-family: Poppins;
+          transform: none !important;
+          .textContainer {
+            // will-change: transform;
+            gap: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            @include buttonStyle();
+            width: 100%;
+            .heading {
+              font-family: Ubuntu;
+              text-align: center;
+              will-change: transform;
+              font-size: 30px;
+              font-weight: 1;
+            }
+            p {
+              text-align: center;
+              font-family: Ubuntu;
+              will-change: transform;
+              width: 80%;
+              word-spacing: 3px;
+              letter-spacing: 1px;
+              font-size: 18px;
+              text-wrap: pretty;
+            }
+            .buttonWrapper {
+              width: 70%;
+              display: flex;
+              flex-direction: row;
+              .width {
+                width: 50px;
+              }
+              .button {
+                display: flex;
+                justify-content: space-evenly;
+                img{
+                  align-self: center;
+                }
+                div{
+                  margin-left: 15%;
+                  align-self: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width : 481px) and (max-width:768px) {
+  @mixin buttonStyle {
+    .button {
+      cursor: pointer;
+      padding: 0.8em 1.8em;
+      border: 2px solid #d2328d;
+      position: relative;
+      overflow: hidden;
+      background-color: transparent;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 16px;
+      transition: 0.3s;
+      z-index: 1;
+      font-family: inherit;
+      color: white;
+    }
+
+    .button::before {
+      content: "";
+      width: 0;
+      height: 300%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      background: #d2328d;
+      transition: 0.5s ease;
+      display: block;
+      z-index: -1;
+    }
+
+    .button:hover::before {
+      width: 120%;
+    }
+
+    .button:hover {
+      color: white;
+    }
+  }
+
+  .body {
+    position: relative;
+    color: white;
+    background-image: url("../../assets/img/projects.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .progress {
+      backdrop-filter: blur(10px);
+      z-index: 910;
+      position: sticky;
+      font-family: Poppins;
+      top: 0;
+      left: 0;
+      text-align: center;
+      font-size: 24px;
+      color: white;
+      .progressBar {
+        border-radius: 10px;
+        height: 10px;
+        background-color: rgb(255, 190, 40);
+      }
+    }
+    .container {
+      padding-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      .wrapper {
+        flex-direction: column;
+        z-index: 900;
+        height: 100%;
+        width: 80%;
+        margin: auto;
+        gap: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .imgContainer {
+          width: 100%;
+          max-height: 300px;
+          img {
+            will-change: transform;
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+            object-fit: contain;
+          }
+        }
+        .textBox {
+          will-change: transform;
+          font-family: Poppins;
+          transform: none !important;
+          .textContainer {
+            // will-change: transform;
+            gap: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            @include buttonStyle();
+            width: 100%;
+            .heading {
+              font-family: Ubuntu;
+              text-align: center;
+              will-change: transform;
+              font-size: 30px;
+              font-weight: 1;
+            }
+            p {
+              text-align: center;
+              font-family: Ubuntu;
+              will-change: transform;
+              width: 80%;
+              word-spacing: 3px;
+              letter-spacing: 1px;
+              font-size: 18px;
+              text-wrap: pretty;
+            }
+            .buttonWrapper {
+              width: 70%;
+              display: flex;
+              flex-direction: row;
+              .width {
+                width: 50px;
+              }
+              .button {
+                display: flex;
+                justify-content: space-evenly;
+                img{
+                  align-self: center;
+                }
+                div{
+                  margin-left: 15%;
+                  align-self: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

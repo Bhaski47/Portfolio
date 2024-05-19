@@ -1,0 +1,153 @@
+@media screen and (max-width: 480px) {
+  .body {
+    background: linear-gradient(180deg, rgba(7,3,16,1) 0%, rgba(31,0,63,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    .container {
+      width: 80%;
+      font-family: Ubuntu;
+      text-align: center;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      .header {
+        h1 {
+          font-size: 32px;
+          span {
+            color: red;
+          }
+        }
+      }
+      .skillContainer {
+        z-index: 990;
+        backdrop-filter: blur(10px);
+        border-radius: 30px;
+        border: 1px solid transparent;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        .imgContainer {
+          display: none;
+          flex: 1;
+          // display: grid;
+          place-items: center;
+          .img {
+            margin: auto;
+            background-image: url("../../assets/img/bg.png");
+            height: 480px;
+            width: 640px;
+          }
+        }
+        .skillBox {
+          flex: 1;
+          width: 100%;
+          .skills {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin: 10px;
+            padding: 30px;
+            .split {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              flex-direction: row;
+              justify-content: space-between;
+              .progress {
+                width: 80%;
+                background-color: white;
+                height: 10px;
+                border-radius: 30px;
+                .bar {
+                  border-radius: 30px;
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width : 481px) and (max-width:768px) {
+  .body {
+    background: linear-gradient(180deg, rgba(7,3,16,1) 0%, rgba(31,0,63,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    .container {
+      width: 80%;
+      font-family: Ubuntu;
+      text-align: center;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      .header {
+        h1 {
+          font-size: 32px;
+          span {
+            color: red;
+          }
+        }
+      }
+      .skillContainer {
+        z-index: 990;
+        backdrop-filter: blur(10px);
+        border-radius: 30px;
+        border: 1px solid transparent;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        .imgContainer {
+          display: none;
+          flex: 1;
+          // display: grid;
+          place-items: center;
+          .img {
+            margin: auto;
+            background-image: url("../../assets/img/bg.png");
+            height: 480px;
+            width: 640px;
+          }
+        }
+        .skillBox {
+          flex: 1;
+          width: 100%;
+          .skills {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            margin: 10px;
+            padding: 30px;
+            .split {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              flex-direction: row;
+              justify-content: space-between;
+              .progress {
+                width: 80%;
+                background-color: white;
+                height: 10px;
+                border-radius: 30px;
+                .bar {
+                  border-radius: 30px;
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

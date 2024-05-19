@@ -1,0 +1,79 @@
+@media screen and (max-width: 480px) {
+  $gradient-colors: #e3e3e3, #b9b9b9;
+  @keyframes textGradient {
+    0% {
+      color: nth($gradient-colors, 1);
+    }
+    50% {
+      color: nth($gradient-colors, 2);
+    }
+    100%{
+      color: nth($gradient-colors, 1);
+    }
+  }
+  
+  .main {
+    z-index: 989;
+    position: relative;
+    .container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 997;
+      top: 0;
+      color: black;
+      .box {
+        width: 80%;
+        height: 40%;
+        h2 {
+          animation: textGradient 5s infinite linear; // Adjust the animation duration as needed
+          background: linear-gradient(to right, $gradient-colors); // Optional: Apply background gradient for better visibility
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          display: inline-block;
+          font-family: Poppins;
+        }
+        h1 {
+          color: rgb(227, 227, 227);
+          font-family: Poppins;
+          font-size: 46px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width : 481px) and (max-width:768px) {
+    .main {
+        z-index: 989;
+        position: relative;
+        .container {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 997;
+          top: 0;
+          color: black;
+          .box {
+            width: 80%;
+            height: 40%;
+            h2 {
+              color: rgb(227, 227, 227);
+              font-family: Poppins;
+            }
+            h1 {
+              color: rgb(227, 227, 227);
+              font-family: Poppins;
+              font-size: 46px;
+            }
+          }
+        }
+      }
+}

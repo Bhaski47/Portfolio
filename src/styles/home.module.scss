@@ -1,0 +1,33 @@
+@use "../styles/mobile/_home.scss";
+@use '../styles/tablet/_homeTab.scss';
+@import url(_fonts.scss);
+@media screen and (min-width: 1024px) {
+  .main {
+    z-index: 900;
+    position: relative;
+    .container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 997;
+      top: 0;
+      color: gray;
+      .box {
+        width: 60%;
+        height: 50%;
+        h2 {
+          color: aliceblue;
+          font-family: Poppins;
+        }
+        h1 {
+          color: aliceblue;
+          font-family: Poppins;
+          font-size: 100px;
+        }
+      }
+    }
+  }
+}

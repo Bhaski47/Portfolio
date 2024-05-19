@@ -1,0 +1,166 @@
+@use "../styles/mobile/works";
+@use "../styles/tablet/worksTab";
+@media screen and (min-width : 1024px ) {
+  @mixin buttonStyle {
+    button {
+      cursor: pointer;
+      padding: 0.8em 1.8em;
+      border: 2px solid #d2328d;
+      position: relative;
+      overflow: hidden;
+      background-color: transparent;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 16px;
+      transition: 0.3s;
+      z-index: 1;
+      font-family: inherit;
+      color: white;
+    }
+
+    button::before {
+      content: "";
+      width: 0;
+      height: 300%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      background: #d2328d;
+      transition: 0.5s ease;
+      display: block;
+      z-index: -1;
+    }
+
+    button:hover::before {
+      width: 120%;
+    }
+
+    button:hover {
+      color: white;
+    }
+  }
+
+  .body {
+    position: relative;
+    color: white;
+    background-image: url("../assets/img/projects.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .progress {
+      backdrop-filter: blur(10px);
+      z-index: 910;
+      position: sticky;
+      font-family: Poppins;
+      top: 0;
+      left: 0;
+      text-align: center;
+      padding-top: 50px;
+      font-size: xx-large;
+      color: white;
+      .progressBar {
+        border-radius: 10px;
+        height: 10px;
+        background-color: rgb(255, 190, 40);
+      }
+    }
+    .container {
+      padding-top: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // overflow: hidden;
+      .wrapper {
+        z-index: 900;
+        height: 100%;
+        width: 80%;
+        margin: auto;
+        gap: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .imgContainer {
+          flex: 1;
+          height: 50%;
+          img {
+            border-radius: 15px;
+            will-change: transform;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        .textBox {
+          will-change: transform;
+          font-family: Poppins;
+          flex: 1;
+          .textContainer {
+            will-change: transform;
+            gap: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            @include buttonStyle();
+            text-rendering: optimizeSpeed;
+            .heading {
+              will-change: transform;
+              font-family: Ubuntu;
+              font-size: 32px;
+            }
+            p {
+              will-change: transform;
+              width: 80%;
+              word-spacing: 3px;
+              letter-spacing: 1px;
+              font-size: larger;
+            }
+            .buttonWrapper {
+              width: 70%;
+              display: flex;
+              justify-content: space-between;
+              flex-direction: row;
+              .width {
+                width: 50px;
+              }
+              .button {
+                display: flex;
+                // gap: 5px;
+                flex-direction: row;
+                // width: 10vw;
+                img {
+                  align-self: center;
+                }
+                .message {
+                  margin-left: 6%;
+                  align-self: center;
+                }
+
+              }
+            }
+            .singleButton {
+              // width: 700px;
+              display: flex;
+              justify-content: center;
+              flex-direction: row;
+              .width {
+                width: 50px;
+              }
+              .button {
+                display: flex;
+                gap: 5px;
+                flex-direction: row;
+                width:90%;
+                img {
+                  align-self: center;
+                }
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
