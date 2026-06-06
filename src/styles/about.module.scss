@@ -66,20 +66,19 @@
         height: 100%;
         font-family: Ubuntu;
         color: aliceblue;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-bottom: 60px;
+        display: flex;
+        justify-content: space-between;
+        // background-color: aqua;
+        box-sizing: border-box;
+        // margin-bottom: 60px;
         .imgContainer {
+          // background-color: #f23f91;
           z-index: 990;
           position: relative;
-          top: -15%;
-          left: 20%;
-          // display: flex;
-          // justify-content: center;
-          // align-items: center;
+          top: -5%;
+          left: 10%;
           width: 80%;
-          // margin: auto;
-          // background-color: #f23f91;
+          flex: 1;
           .img {
             background-image: url('../assets/img/pi.png');
             background-repeat: no-repeat;
@@ -91,10 +90,12 @@
           }
         }
         .textBox{
-          // background-color: #f23f91;
-          backdrop-filter: blur(15px);
-          text-align: center;
+          flex: 1;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
           ul{
+            backdrop-filter: blur(15px);
             font-family: Poppins;
             text-align: start;
             font-size: large;

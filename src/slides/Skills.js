@@ -80,7 +80,7 @@ function Skills() {
         <div className={styles.header}>
           <motion.h1
             whileHover={{ backdropFilter: "blur(15px)" }}
-            style={{ fontSize: "48px", userSelect: "none" }}
+            style={{ fontSize: "56px", userSelect: "none" }}
           >
             Skill Stack
           </motion.h1>

@@ -19,11 +19,13 @@ const Button = ({ item }) => {
     <div className={styles.buttonWrapper}>
       <button onClick={handleLinkButton} className={styles.button}>
         <img src={githubIcon} alt="github" width={32} height={32} />
+        <div className={styles.width} />
         <div className={styles.message}>{item.linkText}</div>
       </button>
       <div className={styles.width} />
       <button onClick={handleWebsiteButton} className={styles.button}>
-        <img src={webIcon} alt="github" width={32} height={32} />
+        <img src={webIcon} alt="demo" width={32} height={32} />
+        <div className={styles.width} />
         <div className={styles.message}>{item.button}</div>
       </button>
     </div>

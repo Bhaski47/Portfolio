@@ -3,7 +3,10 @@ import Button from "../utils/Button";
 import styles from "../styles/works.module.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import artista from "../assets/img/artista.webp";
-import todo from "../assets/img/todo.webp";
+import Task from "../assets/img/Task.webp";
+import TCalendar from "../assets/img/TCalendar.webp";
+import TLogin from "../assets/img/TLogin.webp";
+import TSettings from "../assets/img/TSettings.webp";
 import clinicDash from "../assets/img/Clinic Management/dashboard.png";
 import clinicLogin from "../assets/img/Clinic Management/login.png";
 import clinicBilling from "../assets/img/Clinic Management/billing.png";
@@ -22,7 +25,7 @@ const projects = [
   },
   {
     title: "Clinic Management System",
-    desc: "A Seemless Communication Between Receptionist And Doctor",
+    desc: "This application optimizes patient registration, doctor consultations, and billing processes for efficient clinic management.",
     imgs: [clinicLogin, clinicDash, clinicBilling],
     button: "Visit Now",
     githubLink: "https://github.com/Bhaski47/Clinic-Management",
@@ -30,12 +33,12 @@ const projects = [
     website: "https://careclinic-three.vercel.app/",
   },
   {
-    title: "TODO List With MERN",
-    desc: "Simple , Elegant , Minimalistic TODO List Web App Built With MERN Stack",
-    img: todo,
+    title: "NoteQuick",
+    desc: "Powerful, Focused, Distraction-Free Task Manager Built With Next.js & Spring Boot",
+    imgs: [TLogin,Task,TCalendar,TSettings],
     linkText: "Source Code",
-    githubLink: "https://github.com/Bhaski47/Todo-with-MERN",
-    website: "https://todomern-eta.vercel.app/",
+    githubLink: "https://github.com/Bhaski47/NoteQuick",
+    website: "https://notequick.vercel.app",
     button: "Visit Now",
   },
 ];
@@ -117,7 +120,9 @@ function Works() {
   return (
     <div ref={ref} className={styles.body} id="works">
       <div className={styles.progress}>
-        <h1>PROJECTS</h1>
+        <div className={styles.center}>
+          <h1 style={{ fontSize: "56px", userSelect: "none" }}>PROJECTS</h1>
+        </div>
         <motion.div
           className={styles.progressBar}
           style={{ scaleX: line }}

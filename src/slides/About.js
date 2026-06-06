@@ -29,7 +29,6 @@ function About() {
               <li><p>🚀 Proven track record in enhancing system security and reliability for robust web applications.</p></li>
               <li><p>🤝 Collaborative approach to foster a positive work environment for innovative solutions.</p></li>
               <li><p>⏱ Consistently meets project deadlines and ensures client satisfaction.</p></li>
-              <li><p>💡 Known for creativity in problem-solving and effective communication.</p></li>
               <li><p>🌟 Adaptable to evolving technologies, bringing excellence and success to your projects.</p></li>
             </ul>
           </div>
